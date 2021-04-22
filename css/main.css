@@ -277,6 +277,7 @@ body main section.middle-wrapper > .mini-games-content-wrapper > .game-container
 }
 body main section.middle-wrapper > .mini-games-content-wrapper > .game-container > .game-bg-wrapper {
   width: 100%;
+  height: 100%;
 }
 body main section.middle-wrapper > .mini-games-content-wrapper > .game-container > .game-bg-wrapper > img {
   width: 100%;
