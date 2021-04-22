@@ -340,6 +340,7 @@ body main .bg-component-wrapper > img {
   position: absolute;
   pointer-events: none;
   user-select: none;
+  height: 100%;
 }
 body main .bg-component-wrapper > .bg-gradient {
   width: 75.125rem;
@@ -347,20 +348,10 @@ body main .bg-component-wrapper > .bg-gradient {
   position: absolute;
   background-image: radial-gradient(#573dc0, #302070, transparent, transparent);
   left: 50%;
-  top: 50%;
   opacity: 0.6;
-  transform: translate(-50%, -50%);
-}
-@keyframes bg_gradient {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1.5);
-  }
+  transform: translate(-50%);
 }
 body main .bg-component-wrapper .cube_lime {
-  width: 100%;
   top: -1.25rem;
   overflow: hidden;
   left: 0;
@@ -375,7 +366,6 @@ body main .bg-component-wrapper .cube_lime {
   }
 }
 body main .bg-component-wrapper .cube_lime2 {
-  width: 100%;
   top: -12.25rem;
   overflow: hidden;
   left: 0;
@@ -392,13 +382,19 @@ body main .bg-component-wrapper .cube_lime2 {
   }
 }
 body main .bg-component-wrapper .cube_purple {
-  width: 100%;
   left: 0;
   top: 0.625rem;
   animation: linear 120s bg infinite alternate;
 }
+@keyframes bg {
+  from {
+    transform: rotate(360deg) translateY(-0.625rem);
+  }
+  to {
+    transform: rotate(0) translateY(0);
+  }
+}
 body main .bg-component-wrapper .cube_purple2 {
-  width: 100%;
   left: 0;
   top: 0.625rem;
   animation: linear 120s bg3 infinite alternate;
@@ -409,24 +405,22 @@ body main .bg-component-wrapper .cube_purple2 {
     opacity: 0.6;
   }
   to {
-    transform: scale(1.1) rotate(30deg) translateY(-13.125rem);
+    transform: scale(1.1) rotate(-230deg) translateY(-13.125rem);
     opacity: 1;
   }
 }
 body main .bg-component-wrapper .cube_red {
-  width: 100%;
   top: 0;
   left: 0;
   animation: linear 120s bg infinite alternate;
 }
 body main .bg-component-wrapper .cube_red2 {
-  width: 100%;
   top: 0;
   left: 0;
   animation: linear 120s bg infinite alternate;
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 41.75rem) {
   html {
     font-size: 2vw;
   }
@@ -436,10 +430,10 @@ body main .bg-component-wrapper .cube_red2 {
   }
   body main section.middle-wrapper .mini-games-content-wrapper {
     grid-template-columns: auto auto;
-    grid-gap: 25px;
+    grid-gap: 30px;
   }
 }
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 13.75rem) {
   html {
     font-size: 3vw;
   }
@@ -449,11 +443,6 @@ body main .bg-component-wrapper .cube_red2 {
   }
   body main section.middle-wrapper .mini-games-content-wrapper {
     grid-template-columns: auto;
-  }
-}
-@media screen and (max-width: 343px) {
-  html {
-    font-size: 3vw;
   }
 }
 
