@@ -291,7 +291,7 @@ body main section.middle-wrapper > .mini-games-content-wrapper > .game-container
   width: 100%;
   height: 100%;
   top: 100%;
-  position: relative;
+  position: absolute;
   transition: ease 0.5s;
   z-index: 10 !important;
   pointer-events: none;
