@@ -37,35 +37,38 @@
 // tilt.tilt.destroy.call(tilt)
 
 
-function destroyTilt(){
-    let customWidth = 840;
-    const tilt = $('.game-container, .inner-components').tilt();
-    if($(window).width() < customWidth){
-        tilt.tilt.destroy.call(tilt)
-        console.log("%cTILT JS is Destroyed", "color:red; font-size: 13px; font-weight:700");
-    }   
-    else{
-        console.log("%cTILT JS is Active", "color:green; font-size: 13px; font-weight:700 ");
-    }
-}
+// function destroyTilt(){
+//     let customWidth = 840;
+//     const tilt = $('.game-container, .inner-components').tilt();
+//     if($(window).width() < customWidth){
+//         tilt.tilt.destroy.call(tilt)
+//         console.log("%cTILT JS is Destroyed", "color:red; font-size: 13px; font-weight:700");
+//     }   
+//     else{
+//         console.log("%cTILT JS is Active", "color:green; font-size: 13px; font-weight:700 ");
+//     }
+// }
 
-destroyTilt();
+// destroyTilt();
 
-$(window).resize(function(){
-    let customWidth = 840;
-    const tilt = $('.game-container, .inner-components').tilt();
-    if($(window).width() < customWidth){
-        tilt.tilt.destroy.call(tilt)
-        console.log("%cTILT JS is Destroyed", "color:red; font-size: 13px; font-weight:700");
-    }   
-    else{
-        console.log("%cTILT JS is active", "color:green; font-size: 13px; font-weight:700 ");
-    }
-})
+// $(window).resize(function(){
+//     let customWidth = 840;
+//     const tilt = $('.game-container, .inner-components').tilt();
+//     if($(window).width() < customWidth){
+//         tilt.tilt.destroy.call(tilt)
+//         console.log("%cTILT JS is Destroyed", "color:red; font-size: 13px; font-weight:700");
+//     }   
+//     else{
+//         console.log("%cTILT JS is active", "color:green; font-size: 13px; font-weight:700 ");
+//     }
+// })
 
 
-$('.game-container').on("touchstart",function(){
-    $(this).css({transform:"translateY(-50px)",transition:'ease .5s'});
-}).on('touchend',function(){
-    $(this).css({transform:"translateY(0)"});
-})
+// $('.game-container').on("touchstart",function(ev){
+//    let x = ev.changedTouches[0].pageX;
+//    let y = ev.changedTouches[0].pageY;
+   
+//     $(this).css({transform:`translateX(${x + 'px'})`,transition:'ease .5s'});
+// }).on('touchend',function(ev){
+//     $(this).css({transform:"translateY(0)"});
+// })
